@@ -1,0 +1,38 @@
+'''
+Login page template for the FreshFarmers application.
+'''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FreshFarmers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Login</h1>
+        </div>
+        <div class="content">
+            <form method="POST" action="{{ url_for('main.login') }}">
+                {{ form.hidden_tag() }}
+                <div>
+                    {{ form.username.label }}<br>
+                    {{ form.username(size=32) }}
+                </div>
+                <div>
+                    {{ form.password.label }}<br>
+                    {{ form.password(size=32) }}
+                </div>
+                <div>
+                    {{ form.submit() }}
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 FreshFarmers</p>
+        </div>
+    </div>
+</body>
+</html>

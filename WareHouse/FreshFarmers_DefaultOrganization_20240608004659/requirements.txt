@@ -1,0 +1,13 @@
+
+Explanation of each dependency:
+- **Flask**: The main web framework used for building the web application.
+- **Flask-Session**: Used for session management in Flask.
+- **Flask-SQLAlchemy**: Provides SQLAlchemy support for Flask applications.
+- **Flask-WTF**: Integrates WTForms with Flask for form handling.
+- **geopy**: Used for geolocation services, such as calculating distances between coordinates.
+- **Werkzeug**: A comprehensive WSGI web application library used by Flask.
+- **WTForms**: A flexible forms validation and rendering library for Python web development.
+- **email-validator**: Used for validating email addresses in forms.
+
+To install these dependencies, you can use the following command:
+

@@ -1,0 +1,26 @@
+'''
+Cart management page template for the FreshFarmers application.
+'''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FreshFarmers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cart</h1>
+        </div>
+        <div class="content">
+            <!-- Cart management logic here -->
+            <img src="{{ url_for('static', filename='cart_button.png') }}" alt="Cart Button">
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 FreshFarmers</p>
+        </div>
+    </div>
+</body>
+</html>

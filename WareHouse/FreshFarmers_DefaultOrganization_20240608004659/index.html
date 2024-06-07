@@ -1,0 +1,27 @@
+'''
+Landing page template for the FreshFarmers application.
+'''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFarmers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="FreshFarmers Logo">
+            <h1>Welcome to FreshFarmers</h1>
+            <a href="{{ url_for('main.login') }}"><img src="{{ url_for('static', filename='login_button.png') }}" alt="Login Button"></a>
+        </div>
+        <div class="content">
+            <p>Connecting consumers with local farmers for fresh, locally-sourced agricultural products.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 FreshFarmers</p>
+        </div>
+    </div>
+</body>
+</html>

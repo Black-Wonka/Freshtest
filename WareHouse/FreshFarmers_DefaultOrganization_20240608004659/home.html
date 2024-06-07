@@ -1,0 +1,28 @@
+'''
+Home page template for the FreshFarmers application.
+'''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FreshFarmers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nearby Farms</h1>
+            <button onclick="toggleMapView()"><img src="{{ url_for('static', filename='map_view_button.png') }}" alt="Toggle Map View"></button>
+            <button onclick="toggleMapView()"><img src="{{ url_for('static', filename='list_view_button.png') }}" alt="Toggle List View"></button>
+        </div>
+        <div class="content">
+            <!-- Map and list view logic here -->
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 FreshFarmers</p>
+        </div>
+    </div>
+</body>
+</html>
